@@ -62,9 +62,7 @@ return (
                 </>
             )}/> 
             
-            if (noteTitle != "Notes") {
-                 <Route path="/:noteTitle" exact component={NoteInfo}/>
-            }
+            <Route path="/:noteTitle" exact component={NoteInfo}/>
            
     </div>
     </Router>

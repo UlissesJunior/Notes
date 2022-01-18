@@ -61,7 +61,7 @@ return (
                     <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
                 </>
             )}/> 
-            <Route path="ulissesjunior.github.io/:noteTitle" exact component={NoteInfo}/>
+            <Route path="/:noteTitle" exact component={NoteInfo}/>
     </div>
     </Router>
 )

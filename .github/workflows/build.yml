@@ -14,7 +14,8 @@ jobs:
         with:
           node-version: '14.x'
       - name: Build web-app
-        run: |
+      defaults:
+        run: 
           npm install
           npm run build
       - name: Deploy to gh-pages

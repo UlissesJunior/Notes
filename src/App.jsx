@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Notes from './components/notes.jsx';
 import AddNote from './components/addnote.jsx';
-import Button from './components/button.jsx';
 import NoteInfo from './components/noteinfo.jsx';
 
 const App = () => {

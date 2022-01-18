@@ -53,7 +53,7 @@ return (
     <Router>
     <div className="container">
             <h1>Minhas Tarefas</h1>
-            <Route path='Notes/' exact render={() => (
+            <Route path='/Notes/' exact render={() => (
                 <>
                 <div className='nav-container'>
                     <AddNote handleNoteAdd={handleNoteAdd} />
@@ -61,7 +61,7 @@ return (
                     <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
                 </>
             )}/> 
-            <Route path="/:noteTitle" exact component={NoteInfo}/>
+            <Route path="/Notes/:noteTitle" exact component={NoteInfo}/>
     </div>
     </Router>
 )

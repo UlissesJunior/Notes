@@ -48,40 +48,25 @@ const App = () => {
 
         setNotes(newNotes);
     }
-    const urldosite = document.URL
 
-    if (urldosite == "https://ulissesjunior.github.io/Notes/") {
-        return (
-    <Router>
-    <div className="container">
-            <h1>Minhas Tarefas</h1>
-            <Route path='/Notes/' exact render={() => (
-                <>
-                <div className='nav-container'>
-                    <AddNote handleNoteAdd={handleNoteAdd} />
-                </div>
-                    <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
-                </>
-            )}/> 
-            
-           
-    </div>
-    </Router>
-)
-} else {
     return (
         <Router>
         <div className="container">
                 <h1>Minhas Tarefas</h1>
+                <Route path='/Notes/' exact render={() => (
+                    <>
+                    <div className='nav-container'>
+                        <AddNote handleNoteAdd={handleNoteAdd} />
+                    </div>
+                        <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
+                    </>
+                )}/> 
                 
                 <Route path="/:noteTitle" exact component={NoteInfo}/>
-               
+            
         </div>
         </Router>
-    )
-}
-
-
+)
 }
 
 export default App;

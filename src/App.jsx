@@ -49,7 +49,6 @@ const App = () => {
         setNotes(newNotes);
     }
     const urldosite = document.URL
-    console.log(urlzin)
 
     if (urldosite == "https://ulissesjunior.github.io/Notes/") {
         return (

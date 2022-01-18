@@ -49,10 +49,6 @@ const App = () => {
         setNotes(newNotes);
     }
 
-    const urlsite = document.url;
-    const invisible = document.getElementsByClassName('invisible')
-    const space = document.getElementsByClassName('space')
-
     return (
         <Router>
         <div className="container">
@@ -64,35 +60,20 @@ const App = () => {
                     </div>
                         <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
                     </>
-                )}/> 
-                <div className='space'>
+                )}/>  
+                {/* ARRUMAR */}
+                {/* <div className='space'>
 
                 </div>
-
-                <div className='invisible'>
-                    <Route path={"/:noteTitle"} exact component={NoteInfo}/>
-                </div>
-                
+                <div className='invisible'> */}
+                    <Route path="/:noteTitle" exact component={NoteInfo}/>
+                {/* </div>
+                 */}
 
         </div>
         </Router>
 )
-
- if(urlsite = 'https://ulissesjunior.github.io/Notes/') {
-    invisible.style.cssText = `
-    display: none;
-`
-    space.style.cssText = `
-    height: 24px;
-`   
- } else if(urlsite != 'https://ulissesjunior.github.io/Notes/') {
-    invisible.style.cssText = `
-    display: flex;
-    ` 
-    space.style.cssText = `
-    height: 0px;
-`   
- }
+ 
 }
 
 export default App;

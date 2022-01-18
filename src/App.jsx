@@ -61,7 +61,11 @@ return (
                     <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
                 </>
             )}/> 
-            <Route path="/:noteTitle" exact component={NoteInfo}/>
+            
+            if (noteTitle != "Notes") {
+                 <Route path="/:noteTitle" exact component={NoteInfo}/>
+            }
+           
     </div>
     </Router>
 )

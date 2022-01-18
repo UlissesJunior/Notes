@@ -14,7 +14,6 @@ jobs:
         with:
           node-version: '14.x'
       - name: Build web-app
-      defaults:
         run: 
           npm install
           npm run build

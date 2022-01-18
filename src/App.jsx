@@ -48,8 +48,11 @@ const App = () => {
 
         setNotes(newNotes);
     }
+    const urldosite = document.URL
+    console.log(urlzin)
 
-return (
+    if (urldosite == "https://ulissesjunior.github.io/Notes/") {
+        return (
     <Router>
     <div className="container">
             <h1>Minhas Tarefas</h1>
@@ -62,11 +65,24 @@ return (
                 </>
             )}/> 
             
-            <Route path="/:noteTitle" exact component={NoteInfo}/>
            
     </div>
     </Router>
 )
+} else {
+    return (
+        <Router>
+        <div className="container">
+                <h1>Minhas Tarefas</h1>
+                
+                <Route path="/:noteTitle" exact component={NoteInfo}/>
+               
+        </div>
+        </Router>
+    )
+}
+
+
 }
 
 export default App;

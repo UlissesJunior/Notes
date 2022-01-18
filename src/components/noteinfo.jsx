@@ -16,7 +16,7 @@ const NoteInfo = () => {
         <>
             <div className='info-container'>
                 <Button onClick={handleNoteBack}>
-                    <img src={backImg} />
+                    <img src={backImg} alt="<"/>
                 </Button>
             </div>
             <div className='noteinfo'>

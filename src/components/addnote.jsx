@@ -36,7 +36,7 @@ const AddNote = ({ handleNoteAdd }) => {
         <Button 
         onClick={handleAddNoteClick} 
         className='add-button'>
-        <img src={AddImg} />
+        <img src={AddImg} alt="+"/>
         </Button>
         </>
     );

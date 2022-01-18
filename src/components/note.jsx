@@ -25,11 +25,11 @@ const Note = ({ note, handleNoteClick, handleNoteDel }) => {
 
         <div className='buttonClose'>
             <button className='info-note-button' onClick={handleNoteDetails}>
-               <img src={buttonInfo} /> 
+               <img src={buttonInfo} alt="i"/> 
             </button>
 
             <button className='remove-note-button' onClick={() => handleNoteDel(note.id)}>
-               <img src={buttonClose} /> 
+               <img src={buttonClose} alt="x"/> 
             </button>
         </div>
     </div> 

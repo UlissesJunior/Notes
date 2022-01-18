@@ -1,0 +1,119 @@
+//Variables
+$blue: #0A84FF;
+$blue-80:rgba(75, 121, 243, 0.8);
+$blue-95:rgba(75, 121, 243, 0.95);
+$cinza: rgba(120, 120, 128, 0.12);
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url(./SFPRODISPLAYMEDIUM.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro';
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    h1 {
+        margin: 32px 0 0 24px;
+        color: $blue;
+        font-size: 24px;
+    }
+    p {
+        margin: 16px 0 0 24px;
+        color: #000;
+        font-size: 20px;
+    }
+}
+
+.note-container {
+    background: $blue-80;
+    height: 56px;
+    max-width: 380px;
+    border-radius: 8px;
+    margin: 12px 24px 0px 24px;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+}
+
+.note-container:last-child {
+    margin-bottom: 18px;
+}
+
+.note-title, .buttonClose {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-container {
+    margin: 32px 24px 0;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.info-container {
+    margin: 32px 24px 24px 0;
+    display: flex;
+    Button {
+        width: 100%;
+        background: $blue-95;
+    }
+}
+
+
+.add-note-input {
+   max-width: 310px;
+   width: calc(310px - 10%);
+   height: 48px;
+   border: 2px solid $blue;
+   padding: 0 10px;
+   border-radius: 8px;
+   color: #000;
+   font-size: 16px;
+   outline: none;
+}
+
+@media (min-width: 391px) {
+    body {
+        .add-note-input {
+            width: 310px;
+        }
+    }
+    
+}
+
+.add-button {
+    cursor: pointer;
+    margin: 2px 0 0 25px;
+    background: $cinza;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.remove-note-button, .info-note-button {
+    background: none;
+    height: 13px;
+    cursor: pointer;
+}
+
+.info-note-button {
+    margin-right: 32px;
+    margin-top: -2px;
+}

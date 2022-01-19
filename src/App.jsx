@@ -49,6 +49,13 @@ const App = () => {
         setNotes(newNotes);
     }
 
+    let link = window.location.href;
+    console.log(link)
+
+
+    
+if (link === 'https://ulissesjunior.github.io/Notes/') {
+    
     return (
         <Router>
         <div className="container">
@@ -66,14 +73,43 @@ const App = () => {
 
                 </div>
                 <div className='invisible'> */}
-                    <Route path="/:noteTitle" exact component={NoteInfo}/>
+                    {/* <Route exact path={("/:noteTitle")} 
+                    component={NoteInfo}/> */}
                 {/* </div>
                  */}
 
         </div>
         </Router>
 )
- 
+} else {
+
+    return (
+        <Router>
+        <div className="container">
+                <h1>Minhas Tarefas</h1>
+                <Route path='/Notes/' exact render={() => (
+                    <>
+                    <div className='nav-container'>
+                        <AddNote handleNoteAdd={handleNoteAdd} />
+                    </div>
+                        <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
+                    </>
+                )}/>  
+                {/* ARRUMAR */}
+                {/* <div className='space'>
+
+                </div>
+                <div className='invisible'> */}
+                   <Route  path="/:noteTitle" exact component={NoteInfo}/>
+                {/* </div>
+                 */}
+
+        </div>
+        </Router>
+    )
+}
+  
+
 }
 
 export default App;

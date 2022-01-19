@@ -11,7 +11,7 @@ const NoteInfo = () => {
     const handleNoteBack = () => {
         history.goBack();
     }
-
+ 
     return (  
         <>
             <div className='info-container'>
@@ -24,7 +24,8 @@ const NoteInfo = () => {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempore perspiciatis quam repellendus, libero odit velit consectetur fuga facilis nam laboriosam qui eius placeat?</p>
             </div>
         </>
-    );
+    );  
+    
 }
  
 export default NoteInfo;

@@ -65,9 +65,9 @@ const App = () => {
                  <div className='space'> */}
 
                 {/* </div> */}
-                <div className='invisible'> 
+                {/* <div className='invisible'>  */}
                    <Route path={"/:noteTitle"} exact component={NoteInfo}/>
-                 </div>
+                 {/* </div> */}
                 
 
         </div>

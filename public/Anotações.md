@@ -10,7 +10,7 @@
     - Reusabilidade de código
     - Ótimo trabalho em equipe
 
-![Untitled]("./src/img/rda_demo.png")
+![Untitled](./src/img/rda_demo.png)
 
 ### Como criar um app react
 

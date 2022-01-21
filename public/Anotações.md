@@ -10,7 +10,7 @@
     - Reusabilidade de código
     - Ótimo trabalho em equipe
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fec4cc07-c59b-400b-85a7-b0a2dfc791d6/Untitled.png)
+![Untitled]("./src/img/rda_demo.png")
 
 ### Como criar um app react
 

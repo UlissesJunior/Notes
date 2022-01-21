@@ -1,6 +1,6 @@
 //Variables
 $blue: #0A84FF;
-$blue-80:rgba(75, 121, 243, 0.8);
+$blue-90:rgba(75, 121, 243, 0.9);
 $blue-95:rgba(75, 121, 243, 0.95);
 $cinza: rgba(120, 120, 128, 0.12);
 
@@ -33,7 +33,7 @@ $cinza: rgba(120, 120, 128, 0.12);
 }
 
 .note-container {
-    background: $blue-80;
+    background: $blue-90;
     height: 56px;
     max-width: 380px;
     border-radius: 8px;

@@ -216,9 +216,11 @@ Sempre que você renderiza mais de um componente em um loop, é necessário usar
 
 ## Repositório e Vídeo das Anotações
 ### Repositório
-[Curso de React Para Completos Iniciantes](https://youtu.be/ErjWNvP6mko)
-### Vídeo
 [https://github.com/felipemotarocha/curso-react-dicasparadevs](https://github.com/felipemotarocha/curso-react-dicasparadevs)
+
+### Vídeo
+[Curso de React Para Completos Iniciantes](https://youtu.be/ErjWNvP6mko)
+
 
 ## Repositório, Site e Anotações da Aula
 ### Repositório

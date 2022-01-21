@@ -10,7 +10,9 @@
     - Reusabilidade de código
     - Ótimo trabalho em equipe
 
+<p align="center">
 <img src="../src/img/rda_demo.png">
+<p>
 
 ### Como criar um app react
 

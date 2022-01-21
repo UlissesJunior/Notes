@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/app.css'
 import {v4 as uuidv4} from 'uuid';
 import axios from 'axios';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Notes from './components/notes.jsx';
 import AddNote from './components/addnote.jsx';
@@ -53,21 +53,17 @@ const App = () => {
         <Router>
         <div className="container">
                 <h1>Minhas Tarefas</h1>
-                <Route path='/Notes/' exact render={() => (
-                    <>
-                    <div className='nav-container'>
-                        <AddNote handleNoteAdd={handleNoteAdd} />
-                    </div>
-                        <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
-                    </>
-                )}/>  
-                {/* ARRUMAR
-                 <div className='space'> */}
-
-                {/* </div> */}
-                {/* <div className='invisible'>  */}
-                   <Route path={"/:noteTitle"} exact component={NoteInfo}/>
-                 {/* </div> */}
+                <Switch>
+                    <Route path='/Notes/' exact render={() => (
+                        <>
+                        <div className='nav-container'>
+                            <AddNote handleNoteAdd={handleNoteAdd} />
+                        </div>
+                            <Notes notes={notes} handleNoteClick={handleNoteClick}  handleNoteDel={handleNoteDel}/>
+                        </>
+                    )}/>  
+                   <Route path={"/:noteTitle"} component={NoteInfo}/>
+                </Switch>
                 
 
         </div>

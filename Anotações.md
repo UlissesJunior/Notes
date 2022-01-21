@@ -214,12 +214,16 @@ npm install axios
 
 Sempre que você renderiza mais de um componente em um loop, é necessário usar uma key, para uma render mais rápida por parte do react.
 
-### Repositório e Vídeo das Anotações
-
+## Repositório e Vídeo das Anotações
+### Repositório
 [Curso de React Para Completos Iniciantes](https://youtu.be/ErjWNvP6mko)
-
+### Vídeo
 [https://github.com/felipemotarocha/curso-react-dicasparadevs](https://github.com/felipemotarocha/curso-react-dicasparadevs)
 
-### Repositório, Site e Anotações da Aula
-
+## Repositório, Site e Anotações da Aula
+### Repositório
 [https://github.com/UlissesJunior/Notes](https://github.com/UlissesJunior/Notes)
+### Site
+[https://ulissesjunior.github.io/Notes/](https://ulissesjunior.github.io/Notes/)
+### Anotações
+[https://github.com/UlissesJunior/Notes/blob/main/public/Anotações.md](https://github.com/UlissesJunior/Notes/blob/main/public/Anotações.md)

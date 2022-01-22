@@ -10,7 +10,7 @@ Para saber mais do <a href="public/Anotações.md">React</a>, clique no link.
 ## Mobile First
 Diferente das aplicações do meu <a href="https://github.com/UlissesJunior">Github</a>, dessa vez trouxe uma aplicação com o método mobile first, que significa basicamente "focar" em uma aplicação no modo mobile.
 <p align="center">
-<img src="src/img/rd_demo.png">
+<img src="src/img/rd_notes.png">
 <p>
 
   
